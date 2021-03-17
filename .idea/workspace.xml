@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd2e474-714f-4e9e-93f5-a8d78126ca2a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appFlask/jogoteca.py" beforeDir="false" afterPath="$PROJECT_DIR$/appFlask/jogoteca.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appFlask/templates/lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/appFlask/templates/lista.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/appFlask/jogoteca.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1pZnIP4fF2jDfoNJeBEHj7iM5hJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
