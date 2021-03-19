@@ -1,8 +1,8 @@
 import lista as lista
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session, flash
 
 app = Flask(__name__)
-
+app.secret_key = 'alura'
 
 class Jogo:
     def __init__(self, nome, categoria, console):
@@ -36,5 +36,24 @@ def criar():
     lista.append(jogo)
     return redirect('/')
 
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/autenticar', methods=['POST',])
+def autenticar():
+    if 'mestra' == request.form['senha']:
+        session['usuario_logado'] = request.form['usuario']
+        flash(request.form['usuario'] + ' logou com sucesso!')
+        return redirect('/')
+    else:
+        flash('Não logado, tente denovo!')
+        return redirect('/login')
+
+@app.route('/logout')
+def logout():
+    session['usuario_logado'] = None
+    flash('Nenhum usuário logado!')
+    return redirect('/')
 
 app.run(debug=True)
